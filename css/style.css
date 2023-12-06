@@ -810,8 +810,119 @@ form input textarea::placeholder{
   padding: 0;
 }
 
+/*      PLANES         */
+
+
+
+.body_planes {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/banners/banner6.jpg");
+  background-size: 110%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.precios {
+  filter: drop-shadow(0 2px 0px #202743);
+  padding: 50px;
+  color: #4b5c6bff;
+  font-family: "Franklin Gothic", sans-serif;
+}
+
+.precios h1 {
+  font-size: 60px;
+  padding-bottom: 100PX;
+  padding-top: 50px;
+
+}
+
+.precios h5{
+  padding-bottom: 50PX;
+  padding-right: 100px;
+}  
+  
+
+/*precios*/
+
+/*plan basico*/
+
+
+
+.plan_basico {
+  display: flex;
+  align-items: center; 
+  padding: 20px;
+}
+
+.logo_img {
+  width: 150px;
+  height: auto;
+}
+
+.text_container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px; 
+}
+
+.text_container h6 {
+  margin: 0; 
+  padding-right: 200px;
+}
+
+.precio_anual h4{
+  background-color: rgba(75, 92, 107, 0.164);
+  border-radius: 9%;
+  padding: 3px;
+  border-color: #4b5c6bff;
+  border: solid 1px;
+}
+
+/*check Switch*/
+
+:root {
+  --color-green: #2c88d9;
+  --color-red: #4b5c6bff;
+  --color-button: #fdffff;
+  --color-black: #000;
+}
+.switch-button {
+  display: inline-block;
+}
+.switch-button .switch-button__checkbox {
+  display: none;
+}
+.switch-button .switch-button__label {
+  background-color: var(--color-red);
+  width: 3rem;
+  height: 2rem;
+  border-radius: 3rem;
+  display: inline-block;
+  position: relative;
+}
+.switch-button .switch-button__label:before {
+  transition: .2s;
+  display: block;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--color-button);
+  content: '';
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 0px 1px var(--color-black);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+  background-color: var(--color-green);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+  transform: translateX(1rem);
+}
 
 
 
 /* responsive */
+
 
