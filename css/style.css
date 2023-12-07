@@ -177,14 +177,13 @@ header nav ul li a:hover {
 
 /*intento de banner de fondo*/
 .body_index{
-  width: 100%;
-  height: 100vh;
-  background-image: url("../images/banners/banner.png");
-  background-size: 200%;
-  background-position: center;
-  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
+  background-image: url('/images/banners/Banner.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
 }
 
 /*footer*/
@@ -366,14 +365,13 @@ footer ul {
 /*banner de fondo NOSOTROS*/
 
 .body_nosotros {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../images/banners/banner2.jpg");
-  background-size: 210%; 
-  background-position: center;
-  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
+  background-image: url('../images/banners/banner2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
 }
 
 
@@ -574,14 +572,13 @@ footer ul {
 /*banner de fondo modulos*/
 
 .body_modulos {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../images/banners/banner7.jpg");
-  background-size: 299%; 
-  background-position: center;
-  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
+  background-image: url('../images/banners/banner7.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
 }
 
 
@@ -800,14 +797,13 @@ form input textarea::placeholder{
 
 
 .body_contacto {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../images/banners/banner4.jpg");
-  background-size: 110%; 
-  background-position: center;
-  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
+  background-image: url('../images/banners/banner4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
 }
 
 /*      PLANES         */
@@ -815,14 +811,13 @@ form input textarea::placeholder{
 
 
 .body_planes {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../images/banners/banner6.jpg");
-  background-size: 110%; 
-  background-position: center;
-  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
+  background-image: url('../images/banners/banner6.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
 }
 
 .precios {
@@ -855,6 +850,7 @@ form input textarea::placeholder{
   display: flex;
   align-items: center; 
   padding: 20px;
+  padding-top: 60px;
 }
 
 .logo_img {
@@ -881,6 +877,51 @@ form input textarea::placeholder{
   border: solid 1px;
 }
 
+
+
+/*facturacion electronica*/
+
+
+.FE h4{
+  color: #2c88d9;
+  padding-top: 100px;
+  padding-left: 50px;
+  margin-bottom: 0px;
+  padding-bottom: -50px;
+}
+
+.facturacion-electronica-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.FE_items {
+  width: 40%; 
+}
+
+.switch_button,
+.precio_factura_electronica {
+  display: flex;
+  align-items: center;
+}
+
+.precio_factura_electronica h4 {
+  margin-right: 300px; 
+  background-color: rgba(75, 92, 107, 0.164);
+  border-radius: 9%;
+  padding: 3px;
+  border-color: #4b5c6bff;
+  border: solid 1px;
+}
+
+.facturacion-electronica-container {
+  padding-left: 50px;
+}
+
+
+
 /*check Switch*/
 
 :root {
@@ -889,13 +930,13 @@ form input textarea::placeholder{
   --color-button: #fdffff;
   --color-black: #000;
 }
-.switch-button {
+.switch_button {
   display: inline-block;
 }
-.switch-button .switch-button__checkbox {
+.switch_button .switch-button__checkbox {
   display: none;
 }
-.switch-button .switch-button__label {
+.switch_button .switch-button__label {
   background-color: var(--color-red);
   width: 3rem;
   height: 2rem;
@@ -903,7 +944,7 @@ form input textarea::placeholder{
   display: inline-block;
   position: relative;
 }
-.switch-button .switch-button__label:before {
+.switch_button .switch-button__label:before {
   transition: .2s;
   display: block;
   position: absolute;
@@ -914,12 +955,103 @@ form input textarea::placeholder{
   border-radius: 50%;
   box-shadow: inset 0px 0px 0px 1px var(--color-black);
 }
-.switch-button .switch-button__checkbox:checked + .switch-button__label {
+.switch_button .switch-button__checkbox:checked + .switch-button__label {
   background-color: var(--color-green);
 }
-.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+.switch_button .switch-button__checkbox:checked + .switch-button__label:before {
   transform: translateX(1rem);
 }
+
+/*  caja   */
+
+.caja h4{
+  color: #2c88d9;
+  padding-top: 100px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+
+}
+
+.Caja_titulo .caja h4 {
+  color: #2c88d9;
+  padding-top: 100px;
+  padding-left: 50px;
+  margin-bottom: 0px;
+}
+
+.Caja_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.caja_items {
+  width: 40%;
+}
+
+.switch_button2,
+.precio_caja {
+  display: flex;
+  align-items: center;
+  margin-left: 100px; 
+}
+
+.precio_caja h4 {
+  margin-right: 300px; 
+  background-color: rgba(75, 92, 107, 0.164);
+  border-radius: 9%;
+  padding: 3px;
+  border-color: #4b5c6bff;
+  border: solid 1px;
+}
+
+/* Check Switch */
+:root {
+  --color-green: #2c88d9;
+  --color-red: #4b5c6bff;
+  --color-button: #fdffff;
+  --color-black: #000;
+}
+
+.switch_button2 {
+  display: inline-block;
+}
+
+.switch_button2 .switch-button__checkbox {
+  display: none;
+}
+
+.switch_button2 .switch-button__label {
+  background-color: var(--color-red);
+  width: 3rem;
+  height: 2rem;
+  border-radius: 3rem;
+  display: inline-block;
+  position: relative;
+}
+
+.switch_button2 .switch-button__label:before {
+  transition: 0.2s;
+  display: block;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--color-button);
+  content: '';
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 0px 1px var(--color-black);
+}
+
+.switch_button2 .switch-button__checkbox:checked + .switch-button__label {
+  background-color: var(--color-green);
+}
+
+.switch_button2 .switch-button__checkbox:checked + .switch-button__label:before {
+  transform: translateX(1rem);
+}
+
+
 
 
 
