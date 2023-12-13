@@ -1,6 +1,7 @@
 /*inicio*/
 body, html {
-  height: 100%;
+  height: 100vh;
+
   margin: 0;
   padding: 0;
   font-family: "Franklin Gothic", sans-serif;
@@ -150,7 +151,7 @@ background-color: #000000;}
 .body_index{
   margin: 0;
   padding: 0;
-  background-image: url('/images/banners/banner9.jpg');
+  background-image: url('../images/banners/banner9.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1091,15 +1092,22 @@ form input textarea::placeholder{
 
 @media only screen and (max-width: 720px) {
   /* Agrega estilos específicos aquí */
+
   body {
-      font-size: 14px;
-      width: 720px;
-      zoom: -10%;
-      height: 1280px;
+
+    font-size: 14px;
+    width: 100%;
+    height: 100vh;
   }
 
-  /* ... Otros estilos ... */
+  .nav_responsivo {
+    width: 100%;
+    height: 80px; /* Ajusta la altura según tus necesidades */
+    background-color: #333; /* Agrega un color de fondo opcional */
+  }
 }
+
+
 
 /* Estilos para pantallas más grandes */
 @media only screen and (min-width: 641px) {
@@ -1118,6 +1126,9 @@ form input textarea::placeholder{
       height: 667px;
   }
 
+  .nav_responsivo {
+    width: 100%;
+  }
   /* ... Otros estilos ... */
 }
 
