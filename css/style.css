@@ -6,53 +6,24 @@ body, html {
   font-family: "Franklin Gothic", sans-serif;
 }
 
-/*header*/
-#navBar {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+/*nav-bar*/
+
+.navbar-nav {
+  margin-left: auto;
+
+}
+.navbar {
+background-color: #000000;}
+
+.container-fluid {
+  background-color: #2c88d973;
 }
 
-#logoarcomercial {
-  width: 100px;
-  height: 100px;
-  filter: drop-shadow(0 6px 0px rgba(0, 0, 0, 0.3));
+.navbar-expand-lg{
+  background-color: #2c88d973;  
 }
-
-header nav {
-  text-align: end;
-}
-
-header nav ul {
-  list-style: none;
-}
-
-header nav ul li {
-  display: inline-block;
-  font-size: 20px;
-  padding-left: 8px;
-}
-
-/*animacion en los botones*/
-header nav ul li a {
-  text-decoration: none;
-  background-color: #d5e7f7;
-  border-radius: 15%;
-  padding: 5px 5px;
-  color: #2c88d9;
-  transition: font-size 0.3s;
-  border-color: #2c88d9;
-}
-
-header nav ul li a:hover {
-  background: #2c88d9;
-  border: solid 1px #202743;
-  color: #202743;
-  font-size: 1.3em;
-  filter: drop-shadow(0 6px 0px rgba(0, 0, 0, 0.3));
+.nav-link {
+  color: #000305; /* Reemplaza "fff" con el color del texto que desees */
 }
 
 /*main*/
@@ -179,7 +150,7 @@ header nav ul li a:hover {
 .body_index{
   margin: 0;
   padding: 0;
-  background-image: url('/images/banners/Banner.png');
+  background-image: url('/images/banners/banner9.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -777,6 +748,18 @@ footer ul {
 
 /*           CONCTACTO             */
 
+.contacto_titulo h1 {
+  color: #4b5c6bff;  
+  padding-left: 50px; 
+
+}
+
+.contacto_titulo h6 {
+  padding-left: 50px; 
+  max-width: 60%;
+  padding-bottom: 50px;
+
+}
 
 form {
   max-width: 300px;
@@ -1052,9 +1035,76 @@ form input textarea::placeholder{
 }
 
 
+.planes_total {
+  display: flex;
+  align-items: center;
+}
+
+.total_monto,
+.total_monto_numero {
+  margin-right: 50px; 
+  margin-left: 25px;
+}
+.total_monto {
+  color: #2c88d9;
+}
+
+.total_monto_numero{  margin-right: 300px; 
+  background-color: rgba(75, 92, 107, 0.164);
+  border-radius: 9%;
+  padding-top: 5px;
+  border-color: #4b5c6bff;
+  border: solid 1px;
+
+}
+
+.planes_comprar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.planes_comprar li a {
+  text-decoration: none;
+  background-color: #4b5c6b;
+  border-radius: 10%;
+  padding: 5px 10px;
+  color: #fff;
+  transition: transform 0.7s;
+  margin-left: 50px;
+}
+
+.planes_comprar li a:hover {
+  background: #202743;
+  transform: scale(1.5);
+  filter: drop-shadow(0 6px 0px rgba(0, 0, 0, 0.3));
+}
+
+.planes_comprar{
+  padding: 30px;
+}
+
 
 
 
 /* responsive */
 
+@media only screen and (max-width: 720px) {
+  /* Agrega estilos específicos aquí */
+  body {
+      font-size: 14px;
+      width: 720px;
+      zoom: -10%;
+      height: 1280px;
+  }
 
+  /* ... Otros estilos ... */
+}
+
+/* Estilos para pantallas más grandes */
+@media only screen and (min-width: 641px) {
+  /* Agrega estilos específicos aquí */
+  body {
+      font-size: 16px;
+  }
+}
