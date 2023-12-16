@@ -1026,12 +1026,12 @@ form input textarea::placeholder{
   body {
     margin: 0;
     font-size: 14px;
-    width: 100%;
+    width: 375px;
     height: 100vh;
   }
 
   .nav_responsivo {
-    width: 100%;
+    width: 375px;
     height: auto; 
     background-color: #333;
   }
@@ -1081,6 +1081,10 @@ form input textarea::placeholder{
 .video-container {
   padding: auto;
   padding-bottom: 150px;
+}
+
+footer {
+  width: 375px;
 }
 
 
