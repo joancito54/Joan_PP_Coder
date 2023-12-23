@@ -327,8 +327,8 @@ footer {
   align-items: center;
   padding-top: 100px;
   padding-bottom: 50x;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 
@@ -361,7 +361,7 @@ footer {
   height: 100vh; 
 }
 
-.respaldo h1 {
+.respaldo h2 {
   color: #2c88d9;
   filter: drop-shadow(0 3px 0px #202743);
   margin: 0;
@@ -374,7 +374,7 @@ footer {
 
 /*nuestros clientes opinan*/
 
-.opiniones h1 {
+.opiniones h2 {
   color: #2c88d9;
   filter: drop-shadow(0 3px 0px #202743);
   margin: 0;
@@ -1136,18 +1136,60 @@ footer {
   width: 200px !important;
   height: auto !important;
 }
+}
 
 
+/*NOSOTROS RESP*/
+
+@media only screen and (max-width: 375px) {
+
+.body_nosotros{
+  font-size: 14px;
+  width: 100%;
+  height: 100vh;
+}
+
+.que_es_arcomercial_descripcion h4 {
+  font-size: 14px;
+  text-align:start;
+  padding: 0;
+
+}
+
+.que_es_arcomercial_video {
+  max-width: 100%; 
+  padding: 0 10px; 
+  padding-bottom: 0px;
+  padding-top: 0px;
+  height: 250px;
+}
 
 
+.que_es_arcomercial_video iframe {
+  width: 100%; 
+  height: 200px; 
+}
 
+.respaldo{
+ height: 250px;
+}
 
+.respaldo img {
+  max-width: 100%; 
+  height: auto;
+}
 
+.opiniones .imagenes-container {
+  display: flex;
+  flex-direction: column; /* Muestra las imágenes en una columna en pantallas más pequeñas */
+  align-items: center; /* Centra las imágenes horizontalmente */
+}
 
-
-
-
-
+.opiniones .imagenes-container img {
+  max-width: 100%; /* Ajusta el ancho de las imágenes al 100% para adaptarse al ancho de la pantalla */
+  height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+  margin-bottom: 10px; /* Añade un pequeño margen inferior entre las imágenes */
+}
 
 
 }
