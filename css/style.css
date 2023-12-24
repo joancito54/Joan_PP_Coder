@@ -1193,3 +1193,116 @@ footer {
 
 
 }
+
+
+/*MODULOS RESP*/
+
+@media only screen and (max-width: 375px) {
+
+  .body_modulos{ 
+    font-size: 14px;
+    width: 100%;
+    height: 100vh;
+  }
+
+
+  .nuestros_modulos {
+    text-align: start; 
+    padding: 20px; 
+}
+
+.nuestros_modulos h1 {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+}
+
+.nuestros_modulos h5 {
+    font-size: 14px;
+    padding-right: 50px;
+}
+
+
+.modulos_togo {
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+}
+
+.modulos_togo h6 {
+  margin-top: 50px;
+  font-size: 16px;
+  margin-bottom: 5px; 
+}
+
+.modulos_togo_logo img {
+  width: 150px; 
+  height: 150px;
+  margin-top: 10px; 
+}
+
+.boton_togo li {
+  margin-top: 10px; 
+  align-self: center; 
+}
+
+.modulos_signia {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 10px; 
+  text-align: center; 
+}
+
+.modulos_signia h6 {
+  font-size: 16px;
+  margin: 5px 0; 
+  margin-top: 50px;
+}
+
+.modulos_signia_logo img {
+  width: 150px; 
+  height: 150px;
+}
+
+.modulos_spot {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  padding: 0; 
+}
+
+.modulos_spot h6 {
+  font-size: 16px;
+  margin: 0; 
+  padding: 0; 
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.modulos_spot_logo {
+  margin-top: 10px; 
+}
+
+.modulos_spot_logo img {
+  width: 150px; 
+  height: 150px;
+}
+
+
+.modulos_spot_logo {
+  margin-top: 10px; 
+  margin: auto; 
+}
+
+.modulos_spot_logo img {
+  width: 150px; 
+  height: 150px;
+}
+
+
+.boton_spot {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+}
