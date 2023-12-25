@@ -732,7 +732,7 @@ form input textarea::placeholder{
 
 .precios h5{
   padding-bottom: 50PX;
-  padding-right: 100px;
+
 }  
   
 
@@ -762,7 +762,7 @@ form input textarea::placeholder{
 
 .text_container h6 {
   margin: 0; 
-  padding-right: 200px;
+
 }
 
 .precio_anual h4{
@@ -771,6 +771,7 @@ form input textarea::placeholder{
   padding: 3px;
   border-color: #4b5c6bff;
   border: solid 1px;
+  margin-left: 490px;
 }
 
 
@@ -1305,4 +1306,168 @@ footer {
   margin-top: 50px;
 }
 
+}
+
+
+
+/*PLANES RESP*/
+
+
+@media only screen and (max-width: 375px) {
+
+
+
+  .plan_basico {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+  }
+  
+  .logo_img {
+    max-width: 100%;
+    height: auto;
+    grid-row: span 4;
+    grid-column: span 2;
+    margin-left: 90px;
+   }
+  
+  .text_container {
+    grid-row: span 10;
+    grid-column: span 2;
+    text-align: left;
+  }
+  
+  .text_container h6 {
+    margin: 10px 0;
+  }
+  
+  .precio_anual {
+    grid-row: span 2;
+    grid-column: span 2;
+    text-align: center;
+  }
+  
+  .precio_anual h4 {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+    .plan_basico {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(20, 1fr);
+    }
+  
+    .logo_img {
+      margin-bottom: 0; /* Elimina el margen inferior */
+    }
+  
+    .text_container {
+      grid-row: span 20;
+      grid-column: span 2;
+    }
+  
+  
+
+
+
+
+
+
+    .facturacion-electronica-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(7, 1fr);
+    }
+    
+    .FE {
+      max-width: 100%;
+      height: auto;
+      grid-row: span 7;
+      grid-column: span 4;
+      text-align: center;
+    }
+    
+    .FE_items {
+      grid-row: span 7;
+      grid-column: span 4;
+      text-align: left;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    
+    .FE_items h6 {
+      margin: 10px 0;
+    }
+    
+    .switch_button {
+      grid-row: span 1;
+      grid-column: span 2;
+      text-align: center;
+    }
+    
+    .precio_factura_electronica {
+      grid-row: span 1;
+      grid-column: span 2;
+      text-align: center;
+    }
+    
+    .precio_factura_electronica h4 {
+      margin: 0;
+      padding: 0;
+    }
+    
+
+
+
+    .Caja_container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(7, 1fr);
+    }
+    
+    .caja {
+      max-width: 100%;
+      height: auto;
+      grid-row: span 7;
+      grid-column: span 4;
+      text-align: center;
+    }
+    
+    .caja_items {
+      grid-row: span 7;
+      grid-column: span 4;
+      text-align: left;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    
+    .caja_items h6 {
+      margin: 10px 0;
+    }
+    
+    .switch_button2 {
+      grid-row: span 1;
+      grid-column: span 2;
+      text-align: center;
+    }
+    
+    .precio_caja {
+      grid-row: span 1;
+      grid-column: span 2;
+      text-align: center;
+    }
+    
+    .precio_caja h4 {
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    .planes_total {
+      margin-top: 53px;
+    }
+    
+
+    
 }
