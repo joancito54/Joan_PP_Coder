@@ -650,6 +650,7 @@ footer {
   transition: transform 0.7s;
   margin-left: 50px;
   display: inline-block;
+  margin-bottom: 50px;
 }
 
 .boton_spot a:hover {
@@ -664,6 +665,8 @@ footer {
 .contacto_titulo h1 {
   color: #4b5c6bff;  
   padding-left: 50px; 
+  margin-top: 50px;
+  margin-bottom: 50px;
 
 }
 
@@ -1026,6 +1029,36 @@ form input textarea::placeholder{
 }
 
 
+@media (max-width: 991px) {
+  .navbar-toggler-icon {
+    width: 30px; 
+    height: 30px; 
+  }
+
+
+
+  .navbar-nav {
+    text-align: center; 
+  }
+
+  .navbar-nav a {
+    color: #090c0e; 
+    padding: 15px; 
+    display: block; /* Hace que los enlaces ocupen todo el ancho del contenedor */
+    text-decoration: none; 
+    border-bottom: 1px solid #ddd; 
+    transition: background-color 0.3s; 
+  }
+
+  .navbar-nav a:hover {
+    background-color: #b0b1b2; /* Cambia el color de fondo al pasar el ratón */
+  }
+
+  .bg-body-tertiary {
+    background-color: #333; /* Color de fondo del menú responsivo */
+  }
+}
+
 
 @media only screen and (max-width: 375px) {
 
@@ -1182,14 +1215,14 @@ footer {
 
 .opiniones .imagenes-container {
   display: flex;
-  flex-direction: column; /* Muestra las imágenes en una columna en pantallas más pequeñas */
-  align-items: center; /* Centra las imágenes horizontalmente */
+  flex-direction: column; 
+  align-items: center; 
 }
 
 .opiniones .imagenes-container img {
-  max-width: 100%; /* Ajusta el ancho de las imágenes al 100% para adaptarse al ancho de la pantalla */
-  height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
-  margin-bottom: 10px; /* Añade un pequeño margen inferior entre las imágenes */
+  max-width: 100%; 
+  height: auto; 
+  margin-bottom: 10px; 
 }
 
 
