@@ -1,0 +1,43 @@
+/*inicio*/
+body, html {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic", sans-serif;
+}
+
+/*nav-bar*/
+.nav_responsivo {
+  border: 1px solid #ddd;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+  .navbar {
+    background-color: #000000;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .container-fluid {
+    background-color: #f8f9fa;
+  }
+
+  .navbar-expand-lg {
+    background-color: #f8f9fa;
+    height: 100px;
+  }
+
+  .nav-link {
+    color: #000305;
+
+    &:hover {
+      color: #2c88d9 !important;
+    }
+  }
+}

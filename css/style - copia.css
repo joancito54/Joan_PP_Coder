@@ -1,52 +1,56 @@
-@charset "UTF-8";
 /*inicio*/
 body, html {
   height: 100vh;
+
   margin: 0;
   padding: 0;
   font-family: "Franklin Gothic", sans-serif;
 }
 
 /*nav-bar*/
+
 .nav_responsivo {
   border: 1px solid #ddd;
   box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1000;
+  z-index: 1000; 
 }
-.nav_responsivo .navbar-nav {
+
+
+.navbar-nav {
   margin-left: auto;
+
 }
-.nav_responsivo .navbar {
-  background-color: #000000;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-}
-.nav_responsivo .container-fluid {
+.navbar {
+background-color: #000000;
+box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);}
+
+.container-fluid {
   background-color: #f8f9fa;
 }
-.nav_responsivo .navbar-expand-lg {
+
+.navbar-expand-lg{
   background-color: #f8f9fa;
   height: 100px;
 }
-.nav_responsivo .nav-link {
-  color: #000305;
+.nav-link {
+  color: #000305; 
 }
-.nav_responsivo .nav-link:hover {
+
+a:hover { 
   color: #2c88d9 !important;
 }
 
-footer {
-  box-shadow: 0px 5px 100px #9cc6eb;
-  width: 100%;
-}
 
+/*main*/
 #main {
   position: relative;
   z-index: 1;
   padding: 20px;
 }
+
 #main h2 {
   color: #2c88d9;
   font-family: "Franklin Gothic", sans-serif;
@@ -56,9 +60,7 @@ footer {
   padding: 50px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-#main h2:last-child {
-  padding-top: 100px;
-}
+
 #main h3 {
   color: #2c88d9;
   font-family: "Franklin Gothic", sans-serif;
@@ -69,11 +71,19 @@ footer {
   padding-top: 25px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-#main h5 {
-  color: #2c88d9;
-  -webkit-text-stroke: 0.7px #000000;
-  padding: 10px;
+
+#main h2 {
+  padding-top: 100px;
 }
+
+#main h5 {
+  color: #2c88d9; 
+  -webkit-text-stroke: 0.7px #000000; 
+  
+  padding: 10px; 
+}
+
+
 #main li {
   display: flex;
   align-items: center;
@@ -83,6 +93,7 @@ footer {
   margin-bottom: 40px;
   padding-top: 30px;
 }
+
 #main li a {
   background-color: #2c88d9;
   border-radius: 15%;
@@ -90,112 +101,106 @@ footer {
   color: #fff;
   text-decoration: none;
 }
+
 #main li a:hover {
   background: #202743;
-  transform: scale(1.5);
+  transform: scale(1.5); /*aumento del boton*/
   filter: drop-shadow(0 6px 0px rgba(0, 0, 0, 0.3));
   transition: transform 0.7s;
 }
-#main .servicios h5 {
+
+.servicios h5 {
   padding-right: 80px;
   padding-left: 80px;
 }
-#main .servicios_logos {
+
+.servicios_logos {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-#main .servicios_logos img {
+
+/*animacion logos*/
+.servicios_logos img {
   width: 200px;
   margin: 70px;
+  transition: transform 0.8s;
 }
-#main .servicios_logos img:hover {
+
+.servicios_logos img:hover {
   transform: scale(1.2) rotate(360deg);
 }
-#main .carrusel {
+
+/*carrusel*/
+.carrusel {
   width: 100%;
   overflow: hidden;
 }
-#main .carrusel .carousel-inner img {
+
+.carousel-inner img {
   width: 100%;
   height: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.801);
 }
-#main .carrusel .carousel-item {
+
+.carousel-inner {
+  width: 100%;
+}
+
+.carousel-item {
   text-align: center;
 }
-#main .video {
+
+/*video*/
+.video {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-#main .video .video-container {
+
+.video-container {
   text-align: center;
 }
-#main .video .video-container h5 {
+
+.video h5 {
   margin-bottom: 100px;
 }
-#main .video .video-container iframe {
+
+.video iframe {
   max-width: 100%;
 }
-#main .body_index {
+
+/*intento de banner de fondo*/
+.body_index{
   margin: 0;
   padding: 0;
-  background-image: url("../imagenes/banners/banner9.jpg");
+  background-image: url('../images/banners/banner9.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
 }
 
-/*inicio*/
-body, html {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  font-family: "Franklin Gothic", sans-serif;
+footer {
+  box-shadow: 0px 5px 100px #9cc6eb;
 }
 
-/*main*/
+footer {
+  width: 100%;
+}
+
+
+
+
+
 /*      PAGE NOSOTROS            */
+
+
 /*header*/
-/* Header y Nav */
-#navBar_nosotros {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
 
-#logoarcomercial_nosotrso {
-  width: 100px;
-  height: 100px;
-  filter: drop-shadow(0 6px 0px rgba(0, 0, 0, 0.3));
-}
 
-#navBar_nosotros ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-
-#navBar_nosotros ul li {
-  margin: 0 15px;
-}
-
-#navBar_nosotros ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-#navBar_nosotros ul li a:hover {
-  color: #2c88d9;
-}
 
 /* Header y Nav */
 #navBar_nosotros {
@@ -233,27 +238,69 @@ body, html {
   color: #2c88d9;
 }
 
-.body_nosotros {
+
+
+/* Header y Nav */
+#navBar_nosotros {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+#logoarcomercial_nosotrso {
+  width: 100px;
+  height: 100px;
+  filter: drop-shadow(0 6px 0px rgba(0, 0, 0, 0.3));
+}
+
+#navBar_nosotros ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+#navBar_nosotros ul li {
+  margin: 0 15px;
+}
+
+#navBar_nosotros ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+#navBar_nosotros ul li a:hover {
+  color: #2c88d9;
+}
+
+.body_nosotros{
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Franklin Gothic", sans-serif;
 }
 
+
 /*banner de fondo NOSOTROS*/
+
 .body_nosotros {
   margin: 0;
   padding: 0;
-  background-image: url("../images/banners/banner2.jpg");
+  background-image: url('../images/banners/banner2.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
 }
 
+
 /*que es arcomercial*/
+
 .que_es_arcomercial {
-  text-align: center;
+  text-align: center; 
 }
 
 .que_es_arcomercial div {
@@ -266,11 +313,12 @@ body, html {
 .que_es_arcomercial h1 {
   color: #fff;
   filter: drop-shadow(0 6px 0px #202743);
-  margin: 0;
+  margin: 0; 
+
 }
 
-.que_es_arcomercial img {
-  margin: 0 20px;
+.que_es_arcomercial img{
+  margin: 0 20px;  
 }
 
 .que_es_arcomercial_descripcion {
@@ -282,6 +330,7 @@ body, html {
   padding-left: 50px;
   padding-right: 50px;
 }
+
 
 .que_es_arcomercial_descripcion h4 {
   color: #2c88d9;
@@ -299,16 +348,17 @@ body, html {
 }
 
 .que_es_arcomercial_video iframe {
-  margin-top: 35px;
+  margin-top: 35px; 
 }
 
 /*contamos con el respaldo de*/
+
 .respaldo {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100vh; 
 }
 
 .respaldo h2 {
@@ -319,10 +369,11 @@ body, html {
 }
 
 .respaldo img {
-  margin-top: 20px;
+  margin-top: 20px; 
 }
 
 /*nuestros clientes opinan*/
+
 .opiniones h2 {
   color: #2c88d9;
   filter: drop-shadow(0 3px 0px #202743);
@@ -342,7 +393,13 @@ body, html {
   border-radius: 10%;
 }
 
+
+
+
+
 /*               MODULOS              */
+
+
 /* Header y Nav */
 #navBar_modulos {
   position: relative;
@@ -397,41 +454,47 @@ body, html {
 }
 
 /*banner de fondo modulos*/
+
 .body_modulos {
   margin: 0;
   padding: 0;
-  background-image: url("../images/banners/banner7.jpg");
+  background-image: url('../images/banners/banner7.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
 }
 
+
+
 /*¿con que modulos contamos?*/
-.nuestros_modulos {
+
+.nuestros_modulos{
   height: 100vh;
   width: 100%;
 }
 
-.nuestros_modulos h1 {
+.nuestros_modulos h1{
   margin-top: 50px;
   margin-left: 50px;
   margin-bottom: 80px;
 }
 
-.nuestros_modulos h5 {
+.nuestros_modulos h5{
   margin-left: 50px;
   padding-right: 200px;
 }
 
 /*modulo ToGo*/
+
+
 .modulos_togo {
   margin-top: -150px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: row; 
+  align-items: center; 
   justify-content: space-between;
-  margin-left: 50px;
+  margin-left: 50px; 
 }
 
 .modulos_togo h6 {
@@ -439,19 +502,21 @@ body, html {
   filter: drop-shadow(0 3px 0px #202743);
   text-align: left;
   margin-bottom: 60px;
-  padding-right: 20px;
+  padding-right: 20px; 
 }
 
 .modulos_togo_logo img {
   margin-top: -100px;
   width: 250px;
-  height: 250px;
+  height:250px;
   margin-left: auto;
   margin-right: 0;
   display: block;
 }
 
 /*boton togo*/
+
+
 .boton_togo {
   list-style: none;
   margin: 0;
@@ -474,7 +539,14 @@ body, html {
   filter: drop-shadow(0 6px 0px rgba(0, 0, 0, 0.3));
 }
 
+
+
+
+
+
 /*signia*/
+
+
 .modulos_signia {
   display: flex;
   align-items: center;
@@ -486,7 +558,7 @@ body, html {
 }
 
 .modulos_signia h6 {
-  color: white;
+  color: #ffff;
   filter: drop-shadow(0 3px 0px #202743);
   margin-bottom: 60px;
   margin-left: 50px;
@@ -498,15 +570,16 @@ body, html {
   margin-top: 150px;
   width: 250px;
   height: 200px;
-  margin-right: 20px;
+  margin-right: 20px; 
   margin-left: 50px;
 }
 
 /*boton signia*/
+
 .boton_signia {
   display: flex;
   justify-content: flex-end;
-  margin-top: 20px;
+  margin-top: 20px; 
 }
 
 .boton_signia li {
@@ -530,7 +603,9 @@ body, html {
   filter: drop-shadow(0 6px 0px rgba(0, 0, 0, 0.3));
 }
 
+
 /* spot */
+
 .modulos_spot {
   display: flex;
   justify-content: space-between;
@@ -544,7 +619,7 @@ body, html {
   text-align: left;
   margin: 0;
   max-width: 60%;
-  margin-top: 50px;
+  margin-top: 50px; 
   margin-left: 30px;
 }
 
@@ -553,12 +628,13 @@ body, html {
 }
 
 .modulos_spot_logo img {
-  margin-top: 50px;
+  margin-top: 50px; 
   width: 250px;
   height: 200px;
 }
 
 /* boton spot */
+
 .boton_spot {
   list-style: none;
   margin: 0;
@@ -583,18 +659,22 @@ body, html {
   filter: drop-shadow(0 6px 0px rgba(0, 0, 0, 0.3));
 }
 
+
 /*           CONCTACTO             */
+
 .contacto_titulo h1 {
-  color: #4b5c6b;
-  padding-left: 50px;
+  color: #4b5c6bff;  
+  padding-left: 50px; 
   margin-top: 50px;
   margin-bottom: 50px;
+
 }
 
 .contacto_titulo h6 {
-  padding-left: 50px;
+  padding-left: 50px; 
   max-width: 60%;
   padding-bottom: 50px;
+
 }
 
 form {
@@ -608,17 +688,17 @@ input, textarea {
   font-size: 25px;
   background-color: transparent;
   border: 0;
-  border-bottom: 4px solid #9eadba;
+  border-bottom: 4px solid #9eadba ;
 }
-
-form input textarea::placeholder {
+form input textarea::placeholder{
   color: #9eadba;
 }
+
 
 .body_contacto {
   margin: 0;
   padding: 0;
-  background-image: url("../images/banners/banner4.jpg");
+  background-image: url('../images/banners/banner4.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -626,10 +706,13 @@ form input textarea::placeholder {
 }
 
 /*      PLANES         */
+
+
+
 .body_planes {
   margin: 0;
   padding: 0;
-  background-image: url("../images/banners/banner6.jpg");
+  background-image: url('../images/banners/banner6.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -639,7 +722,7 @@ form input textarea::placeholder {
 .precios {
   filter: drop-shadow(0 2px 0px #202743);
   padding: 50px;
-  color: #4b5c6b;
+  color: #4b5c6bff;
   font-family: "Franklin Gothic", sans-serif;
 }
 
@@ -647,17 +730,24 @@ form input textarea::placeholder {
   font-size: 60px;
   padding-bottom: 100PX;
   padding-top: 50px;
+
 }
 
-.precios h5 {
+.precios h5{
   padding-bottom: 50PX;
-}
+
+}  
+  
 
 /*precios*/
+
 /*plan basico*/
+
+
+
 .plan_basico {
   display: flex;
-  align-items: center;
+  align-items: center; 
   padding: 20px;
   padding-top: 60px;
 }
@@ -670,24 +760,29 @@ form input textarea::placeholder {
 .text_container {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
+  margin-left: 40px; 
 }
 
 .text_container h6 {
-  margin: 0;
+  margin: 0; 
+
 }
 
-.precio_anual h4 {
+.precio_anual h4{
   background-color: rgba(75, 92, 107, 0.164);
   border-radius: 9%;
   padding: 3px;
-  border-color: #4b5c6b;
+  border-color: #4b5c6bff;
   border: solid 1px;
   margin-left: 490px;
 }
 
+
+
 /*facturacion electronica*/
-.FE h4 {
+
+
+.FE h4{
   color: #2c88d9;
   padding-top: 100px;
   padding-left: 50px;
@@ -703,7 +798,7 @@ form input textarea::placeholder {
 }
 
 .FE_items {
-  width: 40%;
+  width: 40%; 
 }
 
 .switch_button,
@@ -713,11 +808,11 @@ form input textarea::placeholder {
 }
 
 .precio_factura_electronica h4 {
-  margin-right: 300px;
+  margin-right: 300px; 
   background-color: rgba(75, 92, 107, 0.164);
   border-radius: 9%;
   padding: 3px;
-  border-color: #4b5c6b;
+  border-color: #4b5c6bff;
   border: solid 1px;
 }
 
@@ -725,22 +820,22 @@ form input textarea::placeholder {
   padding-left: 50px;
 }
 
+
+
 /*check Switch*/
+
 :root {
   --color-green: #2c88d9;
   --color-red: #4b5c6bff;
   --color-button: #fdffff;
   --color-black: #000;
 }
-
 .switch_button {
   display: inline-block;
 }
-
 .switch_button .switch-button__checkbox {
   display: none;
 }
-
 .switch_button .switch-button__label {
   background-color: var(--color-red);
   width: 3rem;
@@ -749,33 +844,32 @@ form input textarea::placeholder {
   display: inline-block;
   position: relative;
 }
-
 .switch_button .switch-button__label:before {
-  transition: 0.2s;
+  transition: .2s;
   display: block;
   position: absolute;
   width: 2rem;
   height: 2rem;
   background-color: var(--color-button);
-  content: "";
+  content: '';
   border-radius: 50%;
   box-shadow: inset 0px 0px 0px 1px var(--color-black);
 }
-
 .switch_button .switch-button__checkbox:checked + .switch-button__label {
   background-color: var(--color-green);
 }
-
 .switch_button .switch-button__checkbox:checked + .switch-button__label:before {
   transform: translateX(1rem);
 }
 
 /*  caja   */
-.caja h4 {
+
+.caja h4{
   color: #2c88d9;
   padding-top: 100px;
   padding-bottom: 25px;
   padding-left: 50px;
+
 }
 
 .Caja_titulo .caja h4 {
@@ -800,15 +894,15 @@ form input textarea::placeholder {
 .precio_caja {
   display: flex;
   align-items: center;
-  margin-left: 100px;
+  margin-left: 100px; 
 }
 
 .precio_caja h4 {
-  margin-right: 300px;
+  margin-right: 300px; 
   background-color: rgba(75, 92, 107, 0.164);
   border-radius: 9%;
   padding: 3px;
-  border-color: #4b5c6b;
+  border-color: #4b5c6bff;
   border: solid 1px;
 }
 
@@ -844,7 +938,7 @@ form input textarea::placeholder {
   width: 2rem;
   height: 2rem;
   background-color: var(--color-button);
-  content: "";
+  content: '';
   border-radius: 50%;
   box-shadow: inset 0px 0px 0px 1px var(--color-black);
 }
@@ -857,6 +951,7 @@ form input textarea::placeholder {
   transform: translateX(1rem);
 }
 
+
 .planes_total {
   display: flex;
   align-items: center;
@@ -864,21 +959,20 @@ form input textarea::placeholder {
 
 .total_monto,
 .total_monto_numero {
-  margin-right: 50px;
+  margin-right: 50px; 
   margin-left: 25px;
 }
-
 .total_monto {
   color: #2c88d9;
 }
 
-.total_monto_numero {
-  margin-right: 300px;
+.total_monto_numero{  margin-right: 300px; 
   background-color: rgba(75, 92, 107, 0.164);
   border-radius: 9%;
   padding-top: 5px;
-  border-color: #4b5c6b;
+  border-color: #4b5c6bff;
   border: solid 1px;
+
 }
 
 .planes_comprar {
@@ -903,372 +997,514 @@ form input textarea::placeholder {
   filter: drop-shadow(0 6px 0px rgba(0, 0, 0, 0.3));
 }
 
-.planes_comprar {
+.planes_comprar{
   padding: 30px;
 }
 
+
+
+
 /* responsive */
+
 /*    INDEX      */
+
 @media only screen and (max-width: 720px) {
+
+
   body {
+
     font-size: 14px;
     width: 100%;
     height: 100vh;
   }
+
   .nav_responsivo {
     width: 100%;
-    height: auto;
+    height: auto; 
     background-color: #333;
   }
+
+  
+
 }
+
+
 @media (max-width: 991px) {
   .navbar-toggler-icon {
-    width: 30px;
-    height: 30px;
+    width: 30px; 
+    height: 30px; 
     z-index: 3;
   }
+
+
+
   .navbar-nav {
-    text-align: center;
+    text-align: center; 
   }
+
   .navbar-nav a {
-    color: #090c0e;
-    padding: 15px;
+    color: #090c0e; 
+    padding: 15px; 
     display: block; /* Hace que los enlaces ocupen todo el ancho del contenedor */
-    text-decoration: none;
-    border-bottom: 1px solid #ddd;
-    transition: background-color 0.3s;
+    text-decoration: none; 
+    border-bottom: 1px solid #ddd; 
+    transition: background-color 0.3s; 
   }
+
   .navbar-nav a:hover {
     background-color: #b0b1b2; /* Cambia el color de fondo al pasar el ratón */
   }
-  .bg-body-tertiary {
+
+  .bg-body-tertiary { 
     background-color: #333; /* Color de fondo del menú responsivo */
   }
 }
+
+
 @media only screen and (max-width: 375px) {
+
   body {
     margin: 0;
     font-size: 14px;
     width: 375px;
     height: 100vh;
   }
+
   .nav_responsivo {
     width: 375px;
-    height: auto;
+    height: auto; 
     background-color: #333;
   }
+
+
   .Open h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: auto;
-  }
+    height: auto; 
+}
+
   .Open h2 {
     margin: 10px;
     padding: 0;
-  }
-  #main.Open h3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
+}
+
+
+
+
+
+#main.Open h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
     margin: 10px;
     padding: 0;
-  }
+}
+
+
+
   .servicios_logos img {
     width: 100px;
     margin: 35px;
   }
-  .carrusel {
-    margin: 0px;
-    padding-bottom: 250px;
-  }
-  .video-container {
-    padding: auto;
-    padding-bottom: 250px;
-  }
-  footer {
-    width: 375px;
-    height: auto;
-  }
-  footer {
-    margin: 0;
-    padding: 0;
-  }
+
+
+.carrusel {
+  margin: 0px;
+  padding-bottom: 250px;
 }
+
+
+.video-container {
+  padding: auto;
+  padding-bottom: 250px;
+}
+
+footer {
+  width: 375px;
+  height: auto;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+
+}
+
 @media only screen and (min-width: 641px) {
+
   body {
-    font-size: 16px;
+      font-size: 16px;
   }
 }
+
+
+
 /*    NOSOTROS    */
+
 @media only screen and (max-width: 375px) {
-  .body_index {
+
+  .body_index{
     margin: 0;
     font-size: 14px;
     width: 375px;
     height: 100vh;
+
   }
+
   .que_es_arcomercial .h1 {
     position: relative;
+
   }
+
   .que_es_arcomercial {
     width: 355px;
     font-size: 5px;
     padding: 8px;
-  }
-  .que_es_arcomercial img {
-    width: 180px;
-    height: auto;
-  }
 }
+
+
+
+.que_es_arcomercial img {
+  width: 180px;
+  height: auto;
+}
+}
+
+
 /*NOSOTROS RESP*/
+
 @media only screen and (max-width: 375px) {
-  .body_nosotros {
-    font-size: 14px;
-    width: 100%;
-    height: 100vh;
-  }
-  .que_es_arcomercial_descripcion h4 {
-    font-size: 14px;
-    text-align: start;
-    padding: 0;
-  }
-  .que_es_arcomercial_video {
-    max-width: 100%;
-    padding: 0 10px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    height: 250px;
-  }
-  .que_es_arcomercial_video iframe {
-    width: 100%;
-    height: 200px;
-  }
-  .respaldo {
-    height: 250px;
-  }
-  .respaldo img {
-    max-width: 100%;
-    height: auto;
-  }
-  .opiniones .imagenes-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .opiniones .imagenes-container img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
+
+.body_nosotros{
+  font-size: 14px;
+  width: 100%;
+  height: 100vh;
 }
+
+.que_es_arcomercial_descripcion h4 {
+  font-size: 14px;
+  text-align:start;
+  padding: 0;
+
+}
+
+.que_es_arcomercial_video {
+  max-width: 100%; 
+  padding: 0 10px; 
+  padding-bottom: 0px;
+  padding-top: 0px;
+  height: 250px;
+}
+
+
+.que_es_arcomercial_video iframe {
+  width: 100%; 
+  height: 200px; 
+}
+
+.respaldo{
+ height: 250px;
+}
+
+.respaldo img {
+  max-width: 100%; 
+  height: auto;
+}
+
+.opiniones .imagenes-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.opiniones .imagenes-container img {
+  max-width: 100%; 
+  height: auto; 
+  margin-bottom: 10px; 
+}
+
+
+}
+
+
 /*MODULOS RESP*/
+
 @media only screen and (max-width: 375px) {
-  .body_modulos {
+
+  .body_modulos{ 
     font-size: 14px;
     width: 100%;
     height: 100vh;
   }
+
+
   .nuestros_modulos {
-    text-align: start;
-    padding: 20px;
-  }
-  .nuestros_modulos h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  .nuestros_modulos h5 {
+    text-align: start; 
+    padding: 20px; 
+}
+
+.nuestros_modulos h1 {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+}
+
+.nuestros_modulos h5 {
     font-size: 14px;
     padding-right: 50px;
-  }
-  .modulos_togo {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .modulos_togo h6 {
-    margin-top: 50px;
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-  .modulos_togo_logo img {
-    width: 150px;
-    height: 150px;
-    margin-top: 10px;
-  }
-  .boton_togo li {
-    margin-top: 10px;
-    align-self: center;
-  }
-  .modulos_signia {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    text-align: center;
-  }
-  .modulos_signia h6 {
-    font-size: 16px;
-    margin: 5px 0;
-    margin-top: 50px;
-  }
-  .modulos_signia_logo img {
-    width: 150px;
-    height: 150px;
-  }
-  .modulos_spot {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
-  .modulos_spot h6 {
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .modulos_spot_logo {
-    margin-top: 10px;
-  }
-  .modulos_spot_logo img {
-    width: 150px;
-    height: 150px;
-  }
-  .modulos_spot_logo {
-    margin-top: 10px;
-    margin: auto;
-  }
-  .modulos_spot_logo img {
-    width: 150px;
-    height: 150px;
-  }
-  .boton_spot {
-    margin-bottom: 50px;
-    margin-top: 50px;
-  }
 }
+
+
+.modulos_togo {
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+}
+
+.modulos_togo h6 {
+  margin-top: 50px;
+  font-size: 16px;
+  margin-bottom: 5px; 
+}
+
+.modulos_togo_logo img {
+  width: 150px; 
+  height: 150px;
+  margin-top: 10px; 
+}
+
+.boton_togo li {
+  margin-top: 10px; 
+  align-self: center; 
+}
+
+.modulos_signia {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 10px; 
+  text-align: center; 
+}
+
+.modulos_signia h6 {
+  font-size: 16px;
+  margin: 5px 0; 
+  margin-top: 50px;
+}
+
+.modulos_signia_logo img {
+  width: 150px; 
+  height: 150px;
+}
+
+.modulos_spot {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  padding: 0; 
+}
+
+.modulos_spot h6 {
+  font-size: 16px;
+  margin: 0; 
+  padding: 0; 
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.modulos_spot_logo {
+  margin-top: 10px; 
+}
+
+.modulos_spot_logo img {
+  width: 150px; 
+  height: 150px;
+}
+
+
+.modulos_spot_logo {
+  margin-top: 10px; 
+  margin: auto; 
+}
+
+.modulos_spot_logo img {
+  width: 150px; 
+  height: 150px;
+}
+
+
+.boton_spot {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+}
+
+
+
 /*PLANES RESP*/
+
+
 @media only screen and (max-width: 375px) {
+
+
+
   .plan_basico {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(10, 1fr);
   }
+  
   .logo_img {
     max-width: 100%;
     height: auto;
     grid-row: span 4;
     grid-column: span 2;
     margin-left: 90px;
-  }
+   }
+  
   .text_container {
     grid-row: span 10;
     grid-column: span 2;
     text-align: left;
   }
+  
   .text_container h6 {
     margin: 10px 0;
   }
+  
   .precio_anual {
     grid-row: span 2;
     grid-column: span 2;
     text-align: center;
   }
+  
   .precio_anual h4 {
     margin: 0;
     padding: 0;
   }
-  .plan_basico {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(20, 1fr);
-  }
-  .logo_img {
-    margin-bottom: 0; /* Elimina el margen inferior */
-  }
-  .text_container {
-    grid-row: span 20;
-    grid-column: span 2;
-  }
-  .facturacion-electronica-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-  }
-  .FE {
-    max-width: 100%;
-    height: auto;
-    grid-row: span 7;
-    grid-column: span 4;
-    text-align: center;
-  }
-  .FE_items {
-    grid-row: span 7;
-    grid-column: span 4;
-    text-align: left;
-    width: 100%;
-    margin-bottom: 50px;
-  }
-  .FE_items h6 {
-    margin: 10px 0;
-  }
-  .switch_button {
-    grid-row: span 1;
-    grid-column: span 2;
-    text-align: center;
-  }
-  .precio_factura_electronica {
-    grid-row: span 1;
-    grid-column: span 2;
-    text-align: center;
-  }
-  .precio_factura_electronica h4 {
-    margin: 0;
-    padding: 0;
-  }
-  .Caja_container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-  }
-  .caja {
-    max-width: 100%;
-    height: auto;
-    grid-row: span 7;
-    grid-column: span 4;
-    text-align: center;
-  }
-  .caja_items {
-    grid-row: span 7;
-    grid-column: span 4;
-    text-align: left;
-    width: 100%;
-    margin-bottom: 50px;
-  }
-  .caja_items h6 {
-    margin: 10px 0;
-  }
-  .switch_button2 {
-    grid-row: span 1;
-    grid-column: span 2;
-    text-align: center;
-  }
-  .precio_caja {
-    grid-row: span 1;
-    grid-column: span 2;
-    text-align: center;
-  }
-  .precio_caja h4 {
-    margin: 0;
-    padding: 0;
-  }
-  .planes_total {
-    margin-top: 53px;
-  }
-}
+  
 
-/*# sourceMappingURL=style.css.map */
+    .plan_basico {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(20, 1fr);
+    }
+  
+    .logo_img {
+      margin-bottom: 0; /* Elimina el margen inferior */
+    }
+  
+    .text_container {
+      grid-row: span 20;
+      grid-column: span 2;
+    }
+  
+  
+
+
+
+
+
+
+    .facturacion-electronica-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(7, 1fr);
+    }
+    
+    .FE {
+      max-width: 100%;
+      height: auto;
+      grid-row: span 7;
+      grid-column: span 4;
+      text-align: center;
+    }
+    
+    .FE_items {
+      grid-row: span 7;
+      grid-column: span 4;
+      text-align: left;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    
+    .FE_items h6 {
+      margin: 10px 0;
+    }
+    
+    .switch_button {
+      grid-row: span 1;
+      grid-column: span 2;
+      text-align: center;
+    }
+    
+    .precio_factura_electronica {
+      grid-row: span 1;
+      grid-column: span 2;
+      text-align: center;
+    }
+    
+    .precio_factura_electronica h4 {
+      margin: 0;
+      padding: 0;
+    }
+    
+
+
+
+    .Caja_container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(7, 1fr);
+    }
+    
+    .caja {
+      max-width: 100%;
+      height: auto;
+      grid-row: span 7;
+      grid-column: span 4;
+      text-align: center;
+    }
+    
+    .caja_items {
+      grid-row: span 7;
+      grid-column: span 4;
+      text-align: left;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    
+    .caja_items h6 {
+      margin: 10px 0;
+    }
+    
+    .switch_button2 {
+      grid-row: span 1;
+      grid-column: span 2;
+      text-align: center;
+    }
+    
+    .precio_caja {
+      grid-row: span 1;
+      grid-column: span 2;
+      text-align: center;
+    }
+    
+    .precio_caja h4 {
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    .planes_total {
+      margin-top: 53px;
+    }
+    
+
+    
+}
