@@ -1,0 +1,132 @@
+/* Header y Nav */
+
+  
+    #logoarcomercial_nosotrso {
+      width: 100px;
+      height: 100px;
+      filter: drop-shadow(0 6px 0px rgba(0, 0, 0, 0.3));
+    }
+  
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+  
+      li {
+        margin: 0 15px;
+  
+        a {
+          text-decoration: none;
+          color: #333;
+          font-weight: bold;
+  
+          &:hover {
+            color: #2c88d9;
+          }
+        }
+      }
+    }
+  
+  
+  /* Body Nosotros */
+  .body_nosotros {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Franklin Gothic", sans-serif;
+  
+    /* Que es Arcomercial */
+    .que_es_arcomercial {
+      text-align: center;
+      margin-top: 50px;
+  
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+  
+        h1 {
+          color: #fff;
+          filter: drop-shadow(0 6px 0px #202743);
+          margin: 0;
+        }
+  
+        img {
+          margin: 0 20px;
+        }
+      }
+    }
+  
+    .que_es_arcomercial_descripcion {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 100px;
+      padding-bottom: 50x;
+      padding-left: 50px;
+      padding-right: 50px;
+  
+      h4 {
+        color: #2c88d9;
+        filter: drop-shadow(0 3px 0px #202743);
+        margin: 0;
+        text-align: center;
+      }
+    }
+  
+    /* Nosotros video */
+    .que_es_arcomercial_video {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  
+      iframe {
+        margin-top: 35px;
+      }
+    }
+  
+    /* Contamos con el respaldo de */
+    .respaldo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+  
+      h2 {
+        color: #2c88d9;
+        filter: drop-shadow(0 3px 0px #202743);
+        margin: 0;
+        text-align: center;
+      }
+  
+      img {
+        margin-top: 20px;
+      }
+    }
+  
+    /* Nuestros clientes opinan */
+    .opiniones {
+      h2 {
+        color: #2c88d9;
+        filter: drop-shadow(0 3px 0px #202743);
+        margin: 0;
+        text-align: center;
+      }
+  
+      .imagenes-container {
+        display: flex;
+        justify-content: center;
+  
+        img {
+          width: 200px;
+          height: auto;
+          margin: 55px;
+          border-radius: 10%;
+        }
+      }
+    }
+  }
+  

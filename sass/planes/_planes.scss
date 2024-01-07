@@ -1,0 +1,286 @@
+.precios {
+    filter: drop-shadow(0 2px 0px #202743);
+    padding: 50px;
+    color: #4b5c6bff;
+    font-family: "Franklin Gothic", sans-serif;
+  }
+  
+  .precios h1 {
+    font-size: 60px;
+    padding-bottom: 100PX;
+    margin-top: 130px;
+
+  
+  }
+  
+  .precios h5{
+    padding-bottom: 50PX;
+  
+  }  
+    
+  
+  /*precios*/
+  
+  /*plan basico*/
+  
+  
+  
+  .plan_basico {
+    display: flex;
+    align-items: center; 
+    padding: 20px;
+    padding-top: 60px;
+  }
+  
+  .logo_img {
+    width: 150px;
+    height: auto;
+  }
+  
+  .text_container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px; 
+  }
+  
+  .text_container h6 {
+    margin: 0; 
+  
+  }
+  
+  .precio_anual h4{
+    background-color: rgba(75, 92, 107, 0.164);
+    border-radius: 9%;
+    padding: 3px;
+    border-color: #4b5c6bff;
+    border: solid 1px;
+    margin-left: 490px;
+  }
+  
+  
+  
+  /*facturacion electronica*/
+  
+  
+  .FE h4{
+    color: #2c88d9;
+    padding-top: 100px;
+    padding-left: 50px;
+    margin-bottom: 0px;
+    padding-bottom: -50px;
+  }
+  
+  .facturacion-electronica-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .FE_items {
+    width: 40%; 
+  }
+  
+  .switch_button,
+  .precio_factura_electronica {
+    display: flex;
+    align-items: center;
+  }
+  
+  .precio_factura_electronica h4 {
+    margin-right: 300px; 
+    background-color: rgba(75, 92, 107, 0.164);
+    border-radius: 9%;
+    padding: 3px;
+    border-color: #4b5c6bff;
+    border: solid 1px;
+  }
+  
+  .facturacion-electronica-container {
+    padding-left: 50px;
+  }
+  
+  
+  
+  /*check Switch*/
+  
+  :root {
+    --color-green: #2c88d9;
+    --color-red: #4b5c6bff;
+    --color-button: #fdffff;
+    --color-black: #000;
+  }
+  .switch_button {
+    display: inline-block;
+  }
+  .switch_button .switch-button__checkbox {
+    display: none;
+  }
+  .switch_button .switch-button__label {
+    background-color: var(--color-red);
+    width: 3rem;
+    height: 2rem;
+    border-radius: 3rem;
+    display: inline-block;
+    position: relative;
+  }
+  .switch_button .switch-button__label:before {
+    transition: .2s;
+    display: block;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--color-button);
+    content: '';
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 1px var(--color-black);
+  }
+  .switch_button .switch-button__checkbox:checked + .switch-button__label {
+    background-color: var(--color-green);
+  }
+  .switch_button .switch-button__checkbox:checked + .switch-button__label:before {
+    transform: translateX(1rem);
+  }
+  
+  /*  caja   */
+  
+  .caja h4{
+    color: #2c88d9;
+    padding-top: 100px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+  
+  }
+  
+  .Caja_titulo .caja h4 {
+    color: #2c88d9;
+    padding-top: 100px;
+    padding-left: 50px;
+    margin-bottom: 0px;
+  }
+  
+  .Caja_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .caja_items {
+    width: 40%;
+  }
+  
+  .switch_button2,
+  .precio_caja {
+    display: flex;
+    align-items: center;
+    margin-left: 100px; 
+  }
+  
+  .precio_caja h4 {
+    margin-right: 300px; 
+    background-color: rgba(75, 92, 107, 0.164);
+    border-radius: 9%;
+    padding: 3px;
+    border-color: #4b5c6bff;
+    border: solid 1px;
+  }
+  
+  /* Check Switch */
+  :root {
+    --color-green: #2c88d9;
+    --color-red: #4b5c6bff;
+    --color-button: #fdffff;
+    --color-black: #000;
+  }
+  
+  .switch_button2 {
+    display: inline-block;
+  }
+  
+  .switch_button2 .switch-button__checkbox {
+    display: none;
+  }
+  
+  .switch_button2 .switch-button__label {
+    background-color: var(--color-red);
+    width: 3rem;
+    height: 2rem;
+    border-radius: 3rem;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .switch_button2 .switch-button__label:before {
+    transition: 0.2s;
+    display: block;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--color-button);
+    content: '';
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 1px var(--color-black);
+  }
+  
+  .switch_button2 .switch-button__checkbox:checked + .switch-button__label {
+    background-color: var(--color-green);
+  }
+  
+  .switch_button2 .switch-button__checkbox:checked + .switch-button__label:before {
+    transform: translateX(1rem);
+  }
+  
+  
+  .planes_total {
+    display: flex;
+    align-items: center;
+  }
+  
+  .total_monto,
+  .total_monto_numero {
+    margin-right: 50px; 
+    margin-left: 25px;
+  }
+  .total_monto {
+    color: #2c88d9;
+  }
+  
+  .total_monto_numero{  margin-right: 300px; 
+    background-color: rgba(75, 92, 107, 0.164);
+    border-radius: 9%;
+    padding-top: 5px;
+    border-color: #4b5c6bff;
+    border: solid 1px;
+  
+  }
+  
+  .planes_comprar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .planes_comprar li a {
+    text-decoration: none;
+    background-color: #4b5c6b;
+    border-radius: 10%;
+    padding: 5px 10px;
+    color: #fff;
+    transition: transform 0.7s;
+    margin-left: 50px;
+  }
+  
+  .planes_comprar li a:hover {
+    background: #202743;
+    transform: scale(1.5);
+    filter: drop-shadow(0 6px 0px rgba(0, 0, 0, 0.3));
+  }
+  
+  .planes_comprar{
+    padding: 30px;
+  }
+  
+  
+  
+  

@@ -1,0 +1,203 @@
+/* Header y Nav */
+#logoarcomercial_modulos {
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(0 6px 0px rgba(0, 0, 0, 0.3));
+  }
+  
+
+      li {
+        margin: 0 15px;
+  
+        a {
+          text-decoration: none;
+          color: #333;
+          font-weight: bold;
+  
+          &:hover {
+            color: #202743;
+          }
+        }
+      }
+    
+  
+  
+  .body_modulos {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Franklin Gothic", sans-serif;
+  
+    /* ¿Con qué módulos contamos? */
+    .nuestros_modulos {
+      height: 100vh;
+      width: 100%;
+  
+      h1 {
+        margin-top: 200px;
+        margin-left: 50px;
+        margin-bottom: 80px;
+      }
+  
+      h5 {
+        margin-left: 50px;
+        padding-right: 200px;
+      }
+    }
+  
+    /* Módulo ToGo */
+    .modulos_togo {
+      margin-top: -150px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 50px;
+  
+      h6 {
+        color: #fff;
+        filter: drop-shadow(0 3px 0px #202743);
+        text-align: left;
+        margin-bottom: 60px;
+        padding-right: 20px;
+      }
+  
+      .modulos_togo_logo img {
+        margin-top: -100px;
+        width: 250px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: 0;
+        display: block;
+      }
+    }
+  
+    /* Botón ToGo */
+    .boton_togo {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  
+      li a {
+        text-decoration: none;
+        background-color: #4b5c6b;
+        border-radius: 10%;
+        padding: 5px 10px;
+        color: #fff;
+        transition: transform 0.7s;
+        margin-left: 50px;
+  
+        &:hover {
+          background: #202743;
+          transform: scale(1.5);
+          filter: drop-shadow(0 6px 0px rgba(0, 0, 0, 0.3));
+        }
+      }
+    }
+  
+    /* Signia */
+    .modulos_signia {
+      display: flex;
+      align-items: center;
+      text-align: center;
+  
+      h6 {
+        color: #ffff;
+        filter: drop-shadow(0 3px 0px #202743);
+        margin-bottom: 60px;
+        margin-left: 50px;
+        padding: 0 50px;
+        margin-top: 150px;
+      }
+  
+      .modulos_signia_logo img {
+        margin-top: 150px;
+        width: 250px;
+        height: 200px;
+        margin-right: 20px;
+        margin-left: 50px;
+      }
+    }
+  
+    /* Botón Signia */
+    .boton_signia {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 20px;
+  
+      li {
+        list-style: none;
+  
+        a {
+          text-decoration: none;
+          background-color: #4b5c6b;
+          border-radius: 10%;
+          padding: 5px 10px;
+          margin-right: 50px;
+          margin-top: -50px;
+          color: #fff;
+          transition: transform 0.7s;
+  
+          &:hover {
+            background: #202743;
+            transform: scale(1.5);
+            filter: drop-shadow(0 6px 0px rgba(0, 0, 0, 0.3));
+          }
+        }
+      }
+    }
+  
+    /* Spot */
+    .modulos_spot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+  
+      h6 {
+        color: #fff;
+        filter: drop-shadow(0 3px 0px #2c88d9);
+        text-align: left;
+        margin: 0;
+        max-width: 60%;
+        margin-top: 50px;
+        margin-left: 30px;
+      }
+  
+      .modulos_spot_logo {
+        margin-left: auto;
+  
+        img {
+          margin-top: 50px;
+          width: 250px;
+          height: 200px;
+        }
+      }
+    }
+  
+    /* Botón Spot */
+    .boton_spot {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  
+      a {
+        text-decoration: none;
+        background-color: #4b5c6b;
+        border-radius: 10%;
+        padding: 5px 10px;
+        color: #fff;
+        transition: transform 0.7s;
+        margin-left: 50px;
+        display: inline-block;
+        margin-bottom: 50px;
+  
+        &:hover {
+          background: #202743;
+          transform: scale(1.5);
+          filter: drop-shadow(0 6px 0px rgba(0, 0, 0, 0.3));
+        }
+      }
+    }
+  }
+  

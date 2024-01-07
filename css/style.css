@@ -19,22 +19,25 @@ body, html {
 .nav_responsivo .navbar-nav {
   margin-left: auto;
 }
-.nav_responsivo .navbar {
+.nav_responsivo .navbar-nav .nav-link {
+  color: #000305;
+}
+.nav_responsivo .navbar-nav .nav-link:hover {
+  color: #2c88d9 !important;
+}
+.nav_responsivo .navbar-nav .navbar {
   background-color: #000000;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
-.nav_responsivo .container-fluid {
+.nav_responsivo .navbar-nav .container-fluid {
   background-color: #f8f9fa;
 }
-.nav_responsivo .navbar-expand-lg {
+.nav_responsivo .navbar-nav .navbar-expand-lg {
   background-color: #f8f9fa;
   height: 100px;
 }
-.nav_responsivo .nav-link {
-  color: #000305;
-}
-.nav_responsivo .nav-link:hover {
-  color: #2c88d9 !important;
+.nav_responsivo .navbar-nav .navbar-expand-lg img {
+  height: 80px; /* Establecer la altura de la imagen en 80px */
 }
 
 footer {
@@ -53,6 +56,7 @@ footer {
   text-align: center;
   font-size: 45px;
   margin-bottom: 20px;
+  margin-top: 100px;
   padding: 50px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -140,140 +144,61 @@ footer {
 #main .video .video-container iframe {
   max-width: 100%;
 }
-#main .body_index {
-  margin: 0;
-  padding: 0;
-  background-image: url("../imagenes/banners/banner9.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100vh;
-}
 
-/*inicio*/
-body, html {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  font-family: "Franklin Gothic", sans-serif;
-}
-
-/*main*/
-/*      PAGE NOSOTROS            */
-/*header*/
 /* Header y Nav */
-#navBar_nosotros {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-
 #logoarcomercial_nosotrso {
   width: 100px;
   height: 100px;
   filter: drop-shadow(0 6px 0px rgba(0, 0, 0, 0.3));
 }
 
-#navBar_nosotros ul {
+ul {
   list-style: none;
   display: flex;
   align-items: center;
 }
-
-#navBar_nosotros ul li {
+ul li {
   margin: 0 15px;
 }
-
-#navBar_nosotros ul li a {
+ul li a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
 }
-
-#navBar_nosotros ul li a:hover {
+ul li a:hover {
   color: #2c88d9;
 }
 
-/* Header y Nav */
-#navBar_nosotros {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-
-#logoarcomercial_nosotrso {
-  width: 100px;
-  height: 100px;
-  filter: drop-shadow(0 6px 0px rgba(0, 0, 0, 0.3));
-}
-
-#navBar_nosotros ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-
-#navBar_nosotros ul li {
-  margin: 0 15px;
-}
-
-#navBar_nosotros ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-#navBar_nosotros ul li a:hover {
-  color: #2c88d9;
-}
-
+/* Body Nosotros */
 .body_nosotros {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Franklin Gothic", sans-serif;
+  /* Que es Arcomercial */
+  /* Nosotros video */
+  /* Contamos con el respaldo de */
+  /* Nuestros clientes opinan */
 }
-
-/*banner de fondo NOSOTROS*/
-.body_nosotros {
-  margin: 0;
-  padding: 0;
-  background-image: url("../images/banners/banner2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100vh;
-}
-
-/*que es arcomercial*/
-.que_es_arcomercial {
+.body_nosotros .que_es_arcomercial {
   text-align: center;
+  margin-top: 50px;
 }
-
-.que_es_arcomercial div {
+.body_nosotros .que_es_arcomercial div {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 100px;
 }
-
-.que_es_arcomercial h1 {
+.body_nosotros .que_es_arcomercial div h1 {
   color: #fff;
   filter: drop-shadow(0 6px 0px #202743);
   margin: 0;
 }
-
-.que_es_arcomercial img {
+.body_nosotros .que_es_arcomercial div img {
   margin: 0 20px;
 }
-
-.que_es_arcomercial_descripcion {
+.body_nosotros .que_es_arcomercial_descripcion {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -282,100 +207,70 @@ body, html {
   padding-left: 50px;
   padding-right: 50px;
 }
-
-.que_es_arcomercial_descripcion h4 {
+.body_nosotros .que_es_arcomercial_descripcion h4 {
   color: #2c88d9;
   filter: drop-shadow(0 3px 0px #202743);
   margin: 0;
   text-align: center;
 }
-
-/* Nosotros video */
-.que_es_arcomercial_video {
+.body_nosotros .que_es_arcomercial_video {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-
-.que_es_arcomercial_video iframe {
+.body_nosotros .que_es_arcomercial_video iframe {
   margin-top: 35px;
 }
-
-/*contamos con el respaldo de*/
-.respaldo {
+.body_nosotros .respaldo {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
-
-.respaldo h2 {
+.body_nosotros .respaldo h2 {
   color: #2c88d9;
   filter: drop-shadow(0 3px 0px #202743);
   margin: 0;
   text-align: center;
 }
-
-.respaldo img {
+.body_nosotros .respaldo img {
   margin-top: 20px;
 }
-
-/*nuestros clientes opinan*/
-.opiniones h2 {
+.body_nosotros .opiniones h2 {
   color: #2c88d9;
   filter: drop-shadow(0 3px 0px #202743);
   margin: 0;
   text-align: center;
 }
-
-.opiniones .imagenes-container {
+.body_nosotros .opiniones .imagenes-container {
   display: flex;
   justify-content: center;
 }
-
-.opiniones img {
+.body_nosotros .opiniones .imagenes-container img {
   width: 200px;
   height: auto;
   margin: 55px;
   border-radius: 10%;
 }
 
-/*               MODULOS              */
 /* Header y Nav */
-#navBar_modulos {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-
 #logoarcomercial_modulos {
   width: 100px;
   height: 100px;
   filter: drop-shadow(0 6px 0px rgba(0, 0, 0, 0.3));
 }
 
-#navBar_modulos ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-
-#navBar_modulos ul li {
+li {
   margin: 0 15px;
 }
-
-#navBar_modulos ul li a {
+li a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
 }
-
-#navBar_modulos ul li a:hover {
+li a:hover {
   color: #202743;
 }
 
@@ -384,48 +279,28 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: "Franklin Gothic", sans-serif;
+  /* ¿Con qué módulos contamos? */
+  /* Módulo ToGo */
+  /* Botón ToGo */
+  /* Signia */
+  /* Botón Signia */
+  /* Spot */
+  /* Botón Spot */
 }
-
-#header_modulos nav ul li a {
-  text-decoration: none;
-  background-color: #ced8e0;
-  border-radius: 15%;
-  padding: 5px 5px;
-  color: #2c88d9;
-  transition: font-size 0.3s;
-  border-color: #2c88d9;
-}
-
-/*banner de fondo modulos*/
-.body_modulos {
-  margin: 0;
-  padding: 0;
-  background-image: url("../images/banners/banner7.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100vh;
-}
-
-/*¿con que modulos contamos?*/
-.nuestros_modulos {
+.body_modulos .nuestros_modulos {
   height: 100vh;
   width: 100%;
 }
-
-.nuestros_modulos h1 {
-  margin-top: 50px;
+.body_modulos .nuestros_modulos h1 {
+  margin-top: 200px;
   margin-left: 50px;
   margin-bottom: 80px;
 }
-
-.nuestros_modulos h5 {
+.body_modulos .nuestros_modulos h5 {
   margin-left: 50px;
   padding-right: 200px;
 }
-
-/*modulo ToGo*/
-.modulos_togo {
+.body_modulos .modulos_togo {
   margin-top: -150px;
   display: flex;
   flex-direction: row;
@@ -433,16 +308,14 @@ body, html {
   justify-content: space-between;
   margin-left: 50px;
 }
-
-.modulos_togo h6 {
+.body_modulos .modulos_togo h6 {
   color: #fff;
   filter: drop-shadow(0 3px 0px #202743);
   text-align: left;
   margin-bottom: 60px;
   padding-right: 20px;
 }
-
-.modulos_togo_logo img {
+.body_modulos .modulos_togo .modulos_togo_logo img {
   margin-top: -100px;
   width: 250px;
   height: 250px;
@@ -450,15 +323,12 @@ body, html {
   margin-right: 0;
   display: block;
 }
-
-/*boton togo*/
-.boton_togo {
+.body_modulos .boton_togo {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
-.boton_togo li a {
+.body_modulos .boton_togo li a {
   text-decoration: none;
   background-color: #4b5c6b;
   border-radius: 10%;
@@ -467,25 +337,17 @@ body, html {
   transition: transform 0.7s;
   margin-left: 50px;
 }
-
-.boton_togo li a:hover {
+.body_modulos .boton_togo li a:hover {
   background: #202743;
   transform: scale(1.5);
   filter: drop-shadow(0 6px 0px rgba(0, 0, 0, 0.3));
 }
-
-/*signia*/
-.modulos_signia {
+.body_modulos .modulos_signia {
   display: flex;
   align-items: center;
   text-align: center;
 }
-
-.modulos_signia_logo {
-  order: -1; /* Cambia el orden y mueve la imagen a la izquierda */
-}
-
-.modulos_signia h6 {
+.body_modulos .modulos_signia h6 {
   color: white;
   filter: drop-shadow(0 3px 0px #202743);
   margin-bottom: 60px;
@@ -493,27 +355,22 @@ body, html {
   padding: 0 50px;
   margin-top: 150px;
 }
-
-.modulos_signia_logo img {
+.body_modulos .modulos_signia .modulos_signia_logo img {
   margin-top: 150px;
   width: 250px;
   height: 200px;
   margin-right: 20px;
   margin-left: 50px;
 }
-
-/*boton signia*/
-.boton_signia {
+.body_modulos .boton_signia {
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
 }
-
-.boton_signia li {
+.body_modulos .boton_signia li {
   list-style: none;
 }
-
-.boton_signia li a {
+.body_modulos .boton_signia li a {
   text-decoration: none;
   background-color: #4b5c6b;
   border-radius: 10%;
@@ -523,22 +380,18 @@ body, html {
   color: #fff;
   transition: transform 0.7s;
 }
-
-.boton_signia li a:hover {
+.body_modulos .boton_signia li a:hover {
   background: #202743;
   transform: scale(1.5);
   filter: drop-shadow(0 6px 0px rgba(0, 0, 0, 0.3));
 }
-
-/* spot */
-.modulos_spot {
+.body_modulos .modulos_spot {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
 }
-
-.modulos_spot h6 {
+.body_modulos .modulos_spot h6 {
   color: #fff;
   filter: drop-shadow(0 3px 0px #2c88d9);
   text-align: left;
@@ -547,25 +400,20 @@ body, html {
   margin-top: 50px;
   margin-left: 30px;
 }
-
-.modulos_spot_logo {
+.body_modulos .modulos_spot .modulos_spot_logo {
   margin-left: auto;
 }
-
-.modulos_spot_logo img {
+.body_modulos .modulos_spot .modulos_spot_logo img {
   margin-top: 50px;
   width: 250px;
   height: 200px;
 }
-
-/* boton spot */
-.boton_spot {
+.body_modulos .boton_spot {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
-.boton_spot a {
+.body_modulos .boton_spot a {
   text-decoration: none;
   background-color: #4b5c6b;
   border-radius: 10%;
@@ -576,64 +424,10 @@ body, html {
   display: inline-block;
   margin-bottom: 50px;
 }
-
-.boton_spot a:hover {
+.body_modulos .boton_spot a:hover {
   background: #202743;
   transform: scale(1.5);
   filter: drop-shadow(0 6px 0px rgba(0, 0, 0, 0.3));
-}
-
-/*           CONCTACTO             */
-.contacto_titulo h1 {
-  color: #4b5c6b;
-  padding-left: 50px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.contacto_titulo h6 {
-  padding-left: 50px;
-  max-width: 60%;
-  padding-bottom: 50px;
-}
-
-form {
-  max-width: 300px;
-  margin: auto;
-}
-
-input, textarea {
-  width: 100%;
-  margin-bottom: 10px;
-  font-size: 25px;
-  background-color: transparent;
-  border: 0;
-  border-bottom: 4px solid #9eadba;
-}
-
-form input textarea::placeholder {
-  color: #9eadba;
-}
-
-.body_contacto {
-  margin: 0;
-  padding: 0;
-  background-image: url("../images/banners/banner4.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100vh;
-}
-
-/*      PLANES         */
-.body_planes {
-  margin: 0;
-  padding: 0;
-  background-image: url("../images/banners/banner6.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100vh;
 }
 
 .precios {
@@ -646,7 +440,7 @@ form input textarea::placeholder {
 .precios h1 {
   font-size: 60px;
   padding-bottom: 100PX;
-  padding-top: 50px;
+  margin-top: 130px;
 }
 
 .precios h5 {
@@ -907,7 +701,102 @@ form input textarea::placeholder {
   padding: 30px;
 }
 
-/* responsive */
+.contacto_titulo h1 {
+  color: #4b5c6b;
+  padding-left: 50px;
+  margin-top: 170px;
+  margin-bottom: 50px;
+}
+
+.contacto_titulo h6 {
+  padding-left: 50px;
+  max-width: 60%;
+  padding-bottom: 50px;
+}
+
+form {
+  max-width: 350px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 25px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 4px solid #9eadba;
+}
+
+form input textarea::placeholder {
+  color: #9eadba;
+}
+
+/*inicio*/
+body, html {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic", sans-serif;
+}
+
+/*banner de fondo index*/
+.body_index {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/banners/banner9.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+/*coloque los banners aca porque en el _index no me tomaba la ruta ponga como la ponga*/
+/*banner de fondo NOSOTROS*/
+.body_nosotros {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/banners/banner2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+/*banner de fondo Modulos*/
+.body_modulos {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/banners/banner7.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+/*banner de fondo planes*/
+.body_planes {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/banners/banner6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+/*banner de fondo contacto*/
+.body_contacto {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/banners/banner4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+/*coloque los banners aca porque en el _index no me tomaba la ruta ponga como la ponga*/
 /*    INDEX      */
 @media only screen and (max-width: 720px) {
   body {

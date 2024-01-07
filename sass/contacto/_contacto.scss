@@ -1,0 +1,31 @@
+.contacto_titulo h1 {
+    color: #4b5c6bff;  
+    padding-left: 50px; 
+    margin-top: 170px;
+    margin-bottom: 50px;
+  
+  }
+  
+  .contacto_titulo h6 {
+    padding-left: 50px; 
+    max-width: 60%;
+    padding-bottom: 50px;
+  
+  }
+  
+  form {
+    max-width: 350px;
+    margin: auto;
+  }
+  
+  input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 25px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 4px solid #9eadba ;
+  }
+  form input textarea::placeholder{
+    color: #9eadba;
+  }
